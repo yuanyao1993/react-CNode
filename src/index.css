@@ -3,24 +3,37 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-.panel {
-    border: 1px solid #000;
-    width: 80%;
+.pageWrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.title {
-    margin: 0;
-    padding: 10px;
-    background: #ccc;
+#logo {
+    color: #fff;
+    text-align: center;
 }
-p.message {
-    color: #aaa;
+.headerDivider {
+    float: left;
+    height: 44px;
+    margin: 10px 0; 
 }
-p.vip {
-    color: red;
+#nav {
+    float: left;
+    margin-left: 30px;
+    background: none;
+    border-bottom: 0;
+    line-height: 62px;
 }
-.hide{
-    display: none;
+#nav a{
+   color: #fff;
 }
-.good{
-    transition: all 1s;
+.xsNav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+
+}
+.mainContent {
+    flex: 1 1 auto;
 }

@@ -1,16 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React , { Component } from 'react';
+import Head from './header';
+import Foot from './footer';
+import RouterIndex from './router/routerIndex';
 
-export default class ShoppingList extends React.Component {
+import './index.css';
+
+export default class App extends Component {
     render() {
       return (
-        <div className="shopping-list">
-          <h1>Shopping List for {this.props.name}</h1>
-          <ul>
-            <li>Instagram</li>
-            <li>WhatsApp</li>
-            <li>Oculus</li>
-          </ul>
+        <div className="pageWrap">
+          <Head />
+          <div className="mainContent">
+            <RouterIndex />
+          </div>
+          <Foot />
         </div>
       );
     }
