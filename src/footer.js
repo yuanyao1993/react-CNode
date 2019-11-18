@@ -1,6 +1,6 @@
 import React , { Component } from 'react';
 import { Layout } from 'antd'
-const { Header, Footer, Sider, Content } = Layout;
+const {Footer} = Layout;
 
 export default class Foot extends Component {
     render () {
