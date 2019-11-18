@@ -18,7 +18,7 @@ export default class NavBar extends Component {
                 theme={theme}
                 selectedKeys={[this.state.now]}
             >
-                <Menu.Item key="Index">
+                <Menu.Item key="index">
                     <Link to="/index/all"><Icon type="home" />首页</Link>
                 </Menu.Item>
                 <Menu.Item key="book">

@@ -1,25 +1,18 @@
 import React, {Component} from 'react'
-import {HashRouter as Router, Route, Link, Switch} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 
-
-
-const Home = () => (
-  <div>
-    <h2>首页</h2>
-  </div>
-)
+import About from "../view/about/index"
+import Book from "../view/book/index"
 
 
 class RouterIndex extends Component {
   render() {
     return (
-      <Router>
-        <div>
-          <Switch>
-            <Route exact path="/" component={Home} />
-          </Switch>
-        </div>
-      </Router>
+      <Switch>
+        <Route exact path="/" component={About} />
+        <Route path="/about" component={About} />
+        <Route path="/book" component={Book} />
+      </Switch>
     )
   }
 }
