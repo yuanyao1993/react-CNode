@@ -10,7 +10,7 @@ export default class App extends Component {
       return (
         <div className="pageWrap">
           <Head />
-          <div className="mainContent">
+          <div className="main">
             <RouterIndex />
           </div>
           <Foot />

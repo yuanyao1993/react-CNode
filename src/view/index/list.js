@@ -10,12 +10,12 @@ export default class IndexList extends Component {
 
     }
     getData (tab, page) { // 首页列表类型、页数
-        
+
     }   
     render() {
         return (
             <div>
-                
+                {this.props.tab}
             </div>
         )
     }

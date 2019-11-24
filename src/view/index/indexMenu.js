@@ -31,7 +31,7 @@ const subMenu = [
 ]
 
 
-export default class indexMenu extends Component {
+export default class IndexMenu extends Component {
     render() {
         let { id, mode } = this.props;
         return (
@@ -41,9 +41,11 @@ export default class indexMenu extends Component {
             >
                 {
                     subMenu.map((item, index) =>{
-                        <Menu.Item key={index}>
-                           <Link to={item.path}>{item.item}</Link>
-                        </Menu.Item>
+                        return(
+                            <Menu.Item key={index}>
+                            <Link to={item.path}>{item.item}</Link>
+                            </Menu.Item>
+                        )
                     })
                     
                 }
